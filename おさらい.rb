@@ -21,19 +21,20 @@
 
 # Channel(チャネル)の作成
 # チャネルとは、即時更新機能を実現するサーバー側の仕組み
+# ----------
 
-# rails g channel message
+# ①ターミナル rails g channel message
 # ※app/channels/message_channel.rbとapp/javascript/channels/message_channel.jsが重要なファイル
 
 # message_channel.rbは、クライアントとサーバーを結びつけるためのファイル
 # message_channel.jsは、サーバーから送られてきたデータをクライアントの画面に描画するためのファイル
 
-# app/channel/message_channel.rb
+# ②app/channel/message_channel.rb
 # stream_fromの追加
 
-# messages_controller.rbにbroadcastを記述
+# ③messages_controller.rbにbroadcastを記述
 
-# app/javascript/channels/message_channel.js
+# ④app/javascript/channels/message_channel.js
 # message_channel.jsを編集
 
 # rails s でローカル状態を確認。
